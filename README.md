@@ -1,4 +1,4 @@
-# Anomaly Detection in Energy Consumption Using Isolation Forest
+# Electricity Anomaly Detection in Energy Consumption Using Isolation Forest
 
 ## Team 7
 

@@ -1,0 +1,11 @@
+row_type,method,sample_size,flagged,flag_rate,method_a,method_b,overlap
+method,Rolling z-score,10000,8,0.0008,,,
+method,Isolation Forest,10000,10,0.001,,,
+method,Local Outlier Factor,10000,12,0.0012,,,
+method,K-means distance,10000,11,0.0011,,,
+pairwise,,10000,,,Rolling z-score,Isolation Forest,1 shared; Jaccard=0.0588
+pairwise,,10000,,,Rolling z-score,Local Outlier Factor,6 shared; Jaccard=0.4286
+pairwise,,10000,,,Rolling z-score,K-means distance,6 shared; Jaccard=0.4615
+pairwise,,10000,,,Isolation Forest,Local Outlier Factor,1 shared; Jaccard=0.0476
+pairwise,,10000,,,Isolation Forest,K-means distance,2 shared; Jaccard=0.1053
+pairwise,,10000,,,Local Outlier Factor,K-means distance,4 shared; Jaccard=0.2105

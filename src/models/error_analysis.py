@@ -2,7 +2,7 @@ import csv
 from pathlib import Path
 
 project = Path(__file__).resolve().parents[2]
-scores_file = project / "results" / "MT_196_isolation_forest_scores.csv"
+scores_file = project / "outputs" / "anomaly_scores.csv"
 report_file = project / "reports" / "error_analysis.md"
 
 records = []

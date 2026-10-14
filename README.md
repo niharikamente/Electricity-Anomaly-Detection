@@ -19,6 +19,7 @@ The dataset contains electricity consumption measurements recorded at 15-minute 
 
 ## Features
 
+
 The project extracts the following features for anomaly detection:
 
 - consumption (kW)
@@ -73,9 +74,6 @@ ML-MINI-PROJECT/
 ├── reports/
 │   └── error_analysis.md
 │
-├── results/
-│   └── MT_196_isolation_forest_scores.csv
-│
 └── src/
     ├── data/
     │   └── clean_data.py
@@ -87,3 +85,4 @@ ML-MINI-PROJECT/
     │   └── isolation_forest.py
     ├── score_reading.py
     └── visualization/
+```

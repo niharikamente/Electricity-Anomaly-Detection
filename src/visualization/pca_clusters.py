@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 ROOT = Path(__file__).resolve().parents[2]
 FEATURES = ROOT / "data" / "processed" / "MT_196_features.csv"
 CLUSTERS = ROOT / "results" / "MT_196_kmeans_scores.csv"
-OUTPUT = ROOT / "results" / "MT_196_kmeans_pca.png"
+OUTPUT = ROOT / "outputs" / "figures" / "pca_clusters_MT_196.png"
 MAX_POINTS = 10_000
 
 records = []

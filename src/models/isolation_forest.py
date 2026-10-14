@@ -8,7 +8,7 @@ from sklearn.ensemble import IsolationForest
 
 project = Path(__file__).resolve().parents[2]
 source = project / "data" / "processed" / "MT_196_features.csv"
-scores_file = project / "results" / "MT_196_isolation_forest_scores.csv"
+scores_file = project / "outputs" / "anomaly_scores.csv"
 model_file = project / "models" / "MT_196_isolation_forest.joblib"
 
 features = []

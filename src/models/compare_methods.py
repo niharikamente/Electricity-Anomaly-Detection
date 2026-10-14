@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 LOF_FILE = ROOT / "results" / "MT_196_lof_sample_scores.csv"
 KMEANS_FILE = ROOT / "results" / "MT_196_kmeans_scores.csv"
-OUTPUT = ROOT / "results" / "MT_196_method_comparison.csv"
+OUTPUT = ROOT / "outputs" / "model_comparison.csv"
 
 with LOF_FILE.open(encoding="utf-8", newline="") as file:
     sample_rows = list(csv.DictReader(file))

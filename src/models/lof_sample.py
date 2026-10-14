@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 
 ROOT = Path(__file__).resolve().parents[2]
 FEATURES = ROOT / "data" / "processed" / "MT_196_features.csv"
-IF_SCORES = ROOT / "results" / "MT_196_isolation_forest_scores.csv"
+IF_SCORES = ROOT / "outputs" / "anomaly_scores.csv"
 BASELINE = ROOT / "results" / "MT_196_baseline_anomalies.csv"
 OUTPUT = ROOT / "results" / "MT_196_lof_sample_scores.csv"
 

@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 project = Path(__file__).resolve().parents[2]
 data_file = project / "data" / "processed" / "LD2011_2014_clean.csv"
-chart_file = project / "results" / "first_week_MT_001.png"
+chart_file = project / "outputs" / "figures" / "first_week_MT_001.png"
 
 times = []
 readings = []

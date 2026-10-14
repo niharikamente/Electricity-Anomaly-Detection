@@ -1,4 +1,4 @@
-# Electricity Anomaly Detection in Energy Consumption Using Isolation Forest
+# Electricity Consumption Anomaly Detection Using Unsupervised Machine Learning
 
 ## Team 7
 
@@ -35,10 +35,19 @@ These features help capture cyclical patterns in energy consumption.
 The following anomaly detection model was used:
 
 1. Isolation Forest
+   - **Algorithm**: Tree-based ensemble method that isolates observations by randomly selecting a feature and splitting value. Because anomalies require fewer splits to isolate, they appear noticeably closer to the root of the trees.
+   - **Configuration**:
+     - `n_estimators`: 200 trees
+     - `contamination`: 0.00115 (~0.115% expected anomaly rate)
+     - `random_state`: 42
 
 ## Model Evaluation
 
 The model was evaluated by calculating the anomaly score for consumption readings. Readings with a high anomaly score (Isolation Forest prediction of `-1`) are flagged for further review as potential faults or abnormal usage.
+
+- **Total Readings Evaluated**: 140,160
+- **Flagged Anomalies**: 162
+- **Scoring**: Higher anomaly score indicates more severe deviation from normal consumption behaviors.
 
 ## Note on Anomaly Detection
 
@@ -62,16 +71,19 @@ ML-MINI-PROJECT/
 ├── outputs/
 │
 ├── reports/
+│   └── error_analysis.md
 │
 ├── results/
+│   └── MT_196_isolation_forest_scores.csv
 │
 └── src/
     ├── data/
+    │   └── clean_data.py
     ├── features/
+    │   └── build_features.py
     ├── models/
     │   ├── error_analysis.py
     │   ├── feature_analysis.py
     │   └── isolation_forest.py
     ├── score_reading.py
     └── visualization/
-```
